@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.6",
+    "@solana/wallet-adapter-base": "^0.9.17",
+    "@solana/wallet-adapter-react": "^0.15.19",
+    "@solana/wallet-adapter-react-ui": "^0.9.17",
+    "@solana/wallet-adapter-wallets": "^0.19.0",
+    "@solana/web3.js": "^1.63.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
     "eslint": "8.24.0",
