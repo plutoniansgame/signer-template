@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import { Stack } from "@mui/material"
+import { Stack, Button } from "@mui/material"
 import { useWallet } from '@solana/wallet-adapter-react';
 
 export default function Home() {
@@ -35,10 +35,10 @@ export default function Home() {
   return (
     <Stack direction="column" spacing={4}>
       <Stack direction="row" justifyContent="space-between" alignItems={"center"}>
-        <h1>test</h1>
+        <h1>Plutonians Sign & Download</h1>
         <WalletMultiButton />
       </Stack>
-      <button onClick={getMessage}>Click me to sign in</button>
+      <Button variant="outlined" onClick={getMessage} sx={{ padding: 2 }}>Click me to sign in</Button>
     </Stack>
   )
 }

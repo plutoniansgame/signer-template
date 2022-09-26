@@ -9,7 +9,14 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   GlowWalletAdapter,
   PhantomWalletAdapter,
+  BloctoWalletAdapter,
   SolletWalletAdapter,
+  BraveWalletAdapter,
+  KeystoneWalletAdapter,
+  SalmonWalletAdapter,
+  TorusWalletAdapter,
+  SolflareWalletAdapter
+
 } from '@solana/wallet-adapter-wallets';
 import Head from "next/head";
 require('@solana/wallet-adapter-react-ui/styles.css');
@@ -25,6 +32,12 @@ function MyApp({ Component, pageProps }) {
       new PhantomWalletAdapter(),
       new GlowWalletAdapter(),
       new SolletWalletAdapter(),
+      new BloctoWalletAdapter(),
+      new BraveWalletAdapter(),
+      new KeystoneWalletAdapter(),
+      new SalmonWalletAdapter(),
+      new TorusWalletAdapter(),
+      new SolflareWalletAdapter()
     ],
     []
   );

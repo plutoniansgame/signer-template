@@ -10,7 +10,7 @@ function verifyMessage(req, res) {
     let bytes = encoder.encode(message)
 
     const verified = nacl.sign.detached.verify(bytes, processedSignature, pubkey.toBytes());
-    const secretURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    const secretURL = "https://www.youtube.com/watch?v=sO8OG2OZx20";
 
     if (verified) {
         res.status(200).json({ verified, secretURL });
